@@ -124,7 +124,7 @@ sampled_indices
 
 print("Input: \n", repr("".join(idx2char[input_example_batch[0]])))
 print()
-prin																																																																																																																																																																																																																																																								t("Next Char Predictions: \n", repr("".join(idx2char[sampled_indices ])))
+print("Next Char Predictions: \n", repr("".join(idx2char[sampled_indices ])))																																																																																																																																																																																																																																																								t("Next Char Predictions: \n", repr("".join(idx2char[sampled_indices ])))
 
 example_batch_loss  = tf.losses.sparse_softmax_cross_entropy(target_example_batch, example_batch_predictions)
 print("Prediction shape: ", example_batch_predictions.shape, " # (batch_size, sequence_length, vocab_size)") 
